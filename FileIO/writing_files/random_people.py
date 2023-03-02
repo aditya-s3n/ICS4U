@@ -7,7 +7,6 @@ def getRandomPerson():
     response = requests.get("https://random-data-api.com/api/v2/users")
     response = response.json()
 
-
     randomID = getRandomID()
     random_salary = getRandomSalary()
     random_name = response["first_name"] + " " + response["last_name"]

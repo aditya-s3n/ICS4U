@@ -33,7 +33,7 @@ def getRandomSalary():
 
 
 
-
+#CSV file
 with open("random_data.csv", "w", newline="") as random_data_file:
     writer = csv.writer(random_data_file)
     
@@ -41,3 +41,13 @@ with open("random_data.csv", "w", newline="") as random_data_file:
         random_person = getRandomPerson()
 
         writer.writerow(random_person)
+
+#TXT file
+with open("random_data_txt.txt", "w") as random_data_file:
+    for i in range(500):
+        random_person = getRandomPerson()
+
+        random_person = "\t".join(random_person)
+        random_person += "\n"
+
+        random_data_file.write(random_person)

@@ -1,0 +1,13 @@
+Identify the precision lost when converting the answer from question 1b ( 1010 1110 ) back to base 10.
+
+1010 1110
+
+sign - 1 - negative
+exponent - 010 - 2
+significand - 1110
+
+1.1110
+
+111.1000
+
+Answer: -7.5

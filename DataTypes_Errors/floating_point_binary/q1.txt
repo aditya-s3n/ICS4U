@@ -1,0 +1,35 @@
+Represent the following decimal numbers as a float. 
+Show the significand, exponent and sign bits (8 bits binary representation)
+
+a)  15.0625
+1111 0001
+1.1110001
+
+sign - positive - 0
+exponent - 3 - 011
+significand - 1110
+
+Answer: 0 011 1110
+
+b)  -7.6875
+0111 1011
+
+01.111011
+
+sign - negative - 1
+exponent - 2 - 010
+significand - 1110
+
+Answer: 1 010 1110
+
+
+c)  -5.75
+0101 1100
+
+01.011100
+
+sign - negative - 1
+exponent - 2 - 010
+significand - 0111
+
+Answer: 1 010 0111

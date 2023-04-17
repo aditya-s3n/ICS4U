@@ -1,0 +1,22 @@
+Convert from floating point representation to decimal.
+
+a)   00011111
+sign - 0 - positive
+exponent - 001 - 1
+significand - 1111 
+
+1.1111
+11.1110
+
+Answer: 3.875
+
+b)   11000010
+negative - 1 - negative
+exponent - 100 - 4
+significand - 0010 
+
+1.0010
+
+10010.0000
+
+Answer: -18.0

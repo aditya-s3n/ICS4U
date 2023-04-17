@@ -1,0 +1,3 @@
+Provide the 8 bit signed representation of the decimal number -100.
+
+1001 1100

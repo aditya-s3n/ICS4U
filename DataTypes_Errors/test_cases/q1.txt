@@ -1,0 +1,28 @@
+Generate three (3) test case scenarios for the function count_birthday_duplicate(month, day)
+
+Provided a birthday (Month Day   for example July 20)
+
+Loop to generate random birthday dates until the provided birthday is generated.
+Keep track of how many times it takes to generate the duplicate birthday.
+
+Return the number of times counted.
+
+Test case 1?
+    case senstive (e.g july 20)
+
+    result = count_birthday_duplicate("July 20")
+    print(result > 0)
+
+
+Test case 2?
+    normal case (e.g July 20)
+    
+    result = count_birthday_duplicate("July 20")
+    print(result > 0)
+
+
+Test case 3?
+    empty string, or invalid information (e.g "")
+
+    result = count_birthday_duplicate("July 20")
+    print(result == 0)

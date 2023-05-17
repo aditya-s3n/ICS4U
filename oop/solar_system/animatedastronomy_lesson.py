@@ -77,10 +77,15 @@ class Planet:
       self.pturtle.shape("circle")
       self.pturtle.goto(self._x,self._y)
       self.pturtle.down()
+      self.pturtle.shapesize(irad, irad)
 
    def get_num_moons(self):
       return self._num_moons
 
+   def change_size(self, new_size):
+      self._radius = new_size
+      self.pturtle.shapesize(new_size, new_size)
+      
    def name(self):
       return self._name
 
@@ -117,6 +122,15 @@ class Planet:
    
    def __repr__(self):
       return self._name
+   
+   def __lt__(self, other):
+      return self._distance < other.distance()
+   
+   def __gt__(self, other):
+      return self._distance > other.distance()
+   
+   def __eq__(self, other):
+      return self._distance == other.distance()
 
    def move_to(self, newx, newy):
       self._x = newx
@@ -172,7 +186,7 @@ class SolarSystem:
       self._planets.remove(aplanet)
 
    def sort_planets(self):
-      pass
+      self._planets.sort()
 
    def __str__(self):
       return f"Sun: {self._thesun}\
@@ -208,12 +222,12 @@ class SolarSystem:
 
 
 def createSSandAnimate():
-   ss = SolarSystem(2, 2)
+   ss = SolarSystem(3, 3)
    
    sun = Sun("SUN", 5000, 10, 5800)
    ss.add_sun(sun)
 
-   earth = Planet("EARTH", 47.5, 5000, 0.3, 0, 2.0, "green")
+   earth = Planet("EARTH", 47.5, 5000, 0.3, 0, 1.0, "green")
    ss.add_planet(earth)
 
    mars = Planet("MARS", 50, 9000, 0.5, 0, 1.63, "red")
@@ -225,6 +239,9 @@ def createSSandAnimate():
    jupiter = Planet("JUPITER", 100, 49000, 0.7, 0, 2, "black")
    ss.add_planet(jupiter)
 
+   saturn = Planet("Saturn", 58, 14700, 1.4, 0, 2, "purple")
+   ss.add_planet(saturn)
+
    print(f"Lenght of the solar system: {len(ss)}")
    print(f"Total mass of the solar system: {ss.total_mass()}")
    print(f"Breakdown of masses:\
@@ -235,7 +252,7 @@ def createSSandAnimate():
          {jupiter.mass()}")
    
    print(ss)
-   ss.remove_planet(earth)
+   ss.sort_planets()
    print(ss)
 
    num_time_periods = 1000

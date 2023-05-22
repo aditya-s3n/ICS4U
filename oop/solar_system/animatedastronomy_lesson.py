@@ -77,7 +77,7 @@ class Planet:
       self.pturtle.shape("circle")
       self.pturtle.goto(self._x,self._y)
       self.pturtle.down()
-      self.pturtle.shapesize(irad, irad)
+      self.pturtle.shapesize(irad * 0.015, irad * 0.015)
 
    def get_num_moons(self):
       return self._num_moons
@@ -255,7 +255,7 @@ def createSSandAnimate():
    ss.sort_planets()
    print(ss)
 
-   num_time_periods = 1000
+   num_time_periods = 100000
    for amove in range(num_time_periods):
       ss.move_planets()
 

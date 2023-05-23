@@ -50,10 +50,6 @@ class Deck:
     _cardValues = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K']
     _suits = ['hearts', 'spades', 'clubs', 'diamonds']
 
-    def __init__(self):
-
-        self._cards = self._generateCards()
-
     @classmethod
     def _generateCards(cls):
 
@@ -93,6 +89,9 @@ class Deck:
 class Canasta(Deck):
     _numCards = (52 * 3) + 6
 
+    def __init__(self):
+        self._cards = self._generateCards()
+
     @classmethod
     def _generateCards(cls):
 
@@ -109,7 +108,8 @@ class Canasta(Deck):
 class Euchre(Deck):
     _cardValues = ['A', 9, 10, 'J', 'Q', 'K']
         
-
+    def __init__(self):
+        self._cards = self._generateCards()
 
 class BlackJack(Deck):
     _numCards = 52 * 8

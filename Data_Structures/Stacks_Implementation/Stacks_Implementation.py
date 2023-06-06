@@ -66,68 +66,68 @@ class ListNode:
         return str(self._value)
 
 
-my_stack = Stack()
+# my_stack = Stack()
 
-my_stack.push(22)
+# my_stack.push(22)
 
-print(my_stack.pop())
-print(my_stack)
-
-
-someStack = Stack()
-someStack.push('a')
-someStack.push('b')
-someStack.push('c')
-someStack.push('d')
-someStack.pop()
-someStack.pop()
-someStack.pop()
-someStack.pop()
-someStack.push('e')
-
-someStack.push('a')
-
-someStack.push('b')
-someStack.pop()
-someStack.push('c')
-
-someStack.push('d')
-
-someStack.push('e')
-someStack.push('a')
-someStack.pop()
-someStack.pop()
-someStack.push('b')
-
-print(someStack)
+# print(my_stack.pop())
+# print(my_stack)
 
 
+# someStack = Stack()
+# someStack.push('a')
+# someStack.push('b')
+# someStack.push('c')
+# someStack.push('d')
+# someStack.pop()
+# someStack.pop()
+# someStack.pop()
+# someStack.pop()
+# someStack.push('e')
 
-stack1 = Stack()
-stack1.push("D")
-stack1.push("C")
-stack1.push("B")
-stack1.push("A")
+# someStack.push('a')
 
-stack2 = Stack()
+# someStack.push('b')
+# someStack.pop()
+# someStack.push('c')
 
-stack3 = Stack()
+# someStack.push('d')
 
-print(stack1)
-print(stack2)
-print(stack3)
+# someStack.push('e')
+# someStack.push('a')
+# someStack.pop()
+# someStack.pop()
+# someStack.push('b')
 
-stack2.push(stack1.pop())
-stack2.push(stack1.pop())
+# print(someStack)
 
-stack3.push(stack1.pop())
 
-stack2.push(stack1.pop())
 
-stack3.push(stack2.pop())
-stack3.push(stack2.pop())
-stack3.push(stack2.pop())
+# stack1 = Stack()
+# stack1.push("D")
+# stack1.push("C")
+# stack1.push("B")
+# stack1.push("A")
 
-print(stack1)
-print(stack2)
-print(stack3)
+# stack2 = Stack()
+
+# stack3 = Stack()
+
+# print(stack1)
+# print(stack2)
+# print(stack3)
+
+# stack2.push(stack1.pop())
+# stack2.push(stack1.pop())
+
+# stack3.push(stack1.pop())
+
+# stack2.push(stack1.pop())
+
+# stack3.push(stack2.pop())
+# stack3.push(stack2.pop())
+# stack3.push(stack2.pop())
+
+# print(stack1)
+# print(stack2)
+# print(stack3)
